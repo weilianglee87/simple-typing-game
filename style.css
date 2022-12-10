@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+.player{
+    top: 1rem;
+    position: absolute;
+}
+.userName{
+    position: absolute;
+}
+.displayName{
+    top: 5rem;
+    position: absolute;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.container{
+    background-color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+}
+.quote{
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+    color: lightgrey;
+}
+.score{
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+.point{
+    position: absolute;
+    top: 5.6rem;
+    left: 9rem;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+#button2{
+    position: absolute;
+    top: 8rem;
+    right: 5rem;
+}
+.timer{
+    position: absolute;
+    font-size: 2rem;
+    top: 5.5rem;
+    right: 6rem;
+    font-weight: bold;
+}
+.input{
+    background-color: transparent;
+    border: 2px solid;
+    outline: none;
+    width: 100%;
+    height: 15rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    
+
+}
+.input:focus{
+    border-color: black;
+}
+.correct {
+    color:rgb(0, 0, 0)
+}
+.incorrect {
+    color:red;
+    text-decoration: underline;
+}
