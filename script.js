@@ -2,10 +2,10 @@ let playerName
 let timer
 let point = 100
 let error = 0
-counter = 60
+let counter = 60
 timeLeft = counter
 score = point - error
-
+let scoreBoard = []
 const reset = () => {
 // $('.input').off()
 $('.scoreBoard').css("display","none")
@@ -90,50 +90,52 @@ $(() => {
     timeLeft = counter
     error = 0
     point = 100
-    let scoreBoard = []
+    
     function initTimer() {
-    if(timeLeft > 0) {
-        timeLeft--
-        $('#timer').text(timeLeft)
-    } else {
-        clearInterval(timer);
-    }
+        if(timeLeft > 0) {
+            timeLeft--
+            $('#timer').text(timeLeft)
+        } else {
+            clearInterval(timer);
+        }
     }
     //one time event
     $('.input').one('keydown', function(){
     //startTimer()
-    timer = setInterval(initTimer, 1000);
+        timer = setInterval(initTimer, 1000);
     })    
     //input value
     $('.input').on('input' ,  () =>{ 
        const arrayQuote = $('.letter').text().split('')
        const arrayValue = $('.input').val().split('')
        let correct = true
+       let error = 0
        arrayQuote.forEach((characterSpan, index) => {
         const character = arrayValue[index]
-        if (character == null){
-            $(`#${index}`).removeClass('correct')
-            $(`#${index}`).removeClass('incorrect')
-            correct = false
+        if (character) {
+            console.log(character)
+            if (character == null){
+                $(`#${index}`).removeClass('correct')
+                $(`#${index}`).removeClass('incorrect')
+                correct = false
+                
+            } else if (character === characterSpan){
             
-        }
-        else if (character === characterSpan){
+                $(`#${index}`).addClass('correct')
+                $(`#${index}`).removeClass('incorrect')
             
-            $(`#${index}`).addClass('correct')
-            $(`#${index}`).removeClass('incorrect')
-            
-        }
-        else {
-            $(`#${index}`).addClass('incorrect')
-            $(`#${index}`).removeClass('correct')
-            correct = false
-            error++
-            score = point - error
-            $('#point').text(score)
-           
+            } else {
+                $(`#${index}`).addClass('incorrect')
+                $(`#${index}`).removeClass('correct')
+                correct = false
+                error++
+            }
         }
         
     })
+    point -= error
+    score = point
+            $('#point').text(score)
     if (correct){
         
         clearInterval(timer)
@@ -158,11 +160,16 @@ $(() => {
         // //         Point = `---`;
         // //     }
         
-        let topTenScores = $("li")
-        topTenScores.each((index, Name) => {
+        let topTenScores = $("li") //array
+        topTenScores.each((index, element) => {
+            // console.log(args)
             if(sortedScore[index]){
-                $("li").text(sortedScore[Name])
+                // console.log(Object.prototype(element))
+                element.innerText(sortedScore[index].Name) 
             }
+            // else{
+            //     $(Name).text(`---`)
+            // }
         })
      
 
