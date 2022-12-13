@@ -10,6 +10,7 @@ let scoreBoard = []
         counter = 0
         point = 100
         error = 0
+        $('.timerText').css("display","none")
         $('.scoreBoard').css("display","none")
         $('#button2').css("display", "none")
         $('#userName').val("")
@@ -40,6 +41,7 @@ let scoreBoard = []
         $('.player2').css('display', "none")
         $('.scoreBoard').css("display", "block")
         $('#button2').css("display", "block")
+        $('.timerText').css("display","block")
         })
     }
     $('#button2').on('click',(event)=> {
@@ -64,6 +66,7 @@ let scoreBoard = []
         $('.input').css ("display", "none")
         $('.container').css("display", "none")
         $('.scoreBoard').css("display", "none")
+        $('.timerText').css("display","none")
         $('#button').on('click', (event)=>{
         playerName = $('#userName').val()
         $('#displayName').text(playerName)
@@ -79,6 +82,7 @@ let scoreBoard = []
         $('.scoreBoard').css("display", "block")
         $('#button2').css("display", "block")
         $('.scoreBoard').css("display", "block")
+        $('.timerText').css("display","block")
         
             const quote = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.'
             quote.split('').forEach((character, index)=> {

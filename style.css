@@ -29,6 +29,7 @@ body{
     border-radius: .5rem;
     width: 700px;
     max-width: 90%;
+   
 }
 .quote{
     margin-bottom: 1rem;
@@ -38,27 +39,32 @@ body{
 }
 .score{
     position: absolute;
-    top: 5rem;
-    left: 5rem;
+    top: 4rem;
+    left: 28rem;
 }
 .point{
     position: absolute;
-    top: 5.6rem;
-    left: 9rem;
+    top: 4.6rem;
+    left: 32rem;
     font-size: 2rem;
     color: black;
     font-weight: bold;
 }
 #button2{
     position: absolute;
-    top: 8rem;
-    right: 5rem;
+    top: 7rem;
+    right: 31rem;
+}
+.timerText{
+    position: absolute;
+    top: 4rem;
+    right: 30rem;
 }
 .timer{
     position: absolute;
     font-size: 2rem;
-    top: 5.5rem;
-    right: 6rem;
+    top: 4.6rem;
+    right: 28rem;
     font-weight: bold;
 }
 .input{
@@ -79,6 +85,9 @@ body{
     border-color: black;
 }
 .scoreBoard{
+    position: absolute;
+    top: 35rem;  
+    left: 28rem;
     font-size: 1.5rem;
 }
 .correct {
