@@ -78,6 +78,9 @@ body{
 .input:focus{
     border-color: black;
 }
+.scoreBoard{
+    font-size: 1.5rem;
+}
 .correct {
     color:rgb(0, 0, 0)
 }

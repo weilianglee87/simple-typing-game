@@ -47,7 +47,7 @@ let scoreBoard = []
         $('.letter').remove()
         $("span").html("")
         $('#displayName').text("")
-        $('#point').html("")
+        $('#point').html("100")
         $('.input').unbind()
         clearInterval(timer)
         $('#timer').text("")
@@ -109,10 +109,10 @@ let scoreBoard = []
             })    
             //input value
             $('.input').on('input' ,  () =>{ 
-                let correct = true
-                let error = 0
                 const arrayQuote = $('.letter').text().split('')
                 const arrayValue = $('.input').val().split('')
+                let correct = true
+                let error = 0
                 arrayQuote.forEach((characterSpan, index) => {
                 const character = arrayValue[index]
                 if (character) {
@@ -131,20 +131,19 @@ let scoreBoard = []
                         $(`#${index}`).removeClass('correct')
                         correct = false
                         error++
+                        score = point - error
                     }
                 }
             
             })
-            //point -= error
-            console.log(error)
-            score = point - error
+                    //point -= error
+                    //point -= error
+                    //score = point - error
                     $('#point').text(score)
             if (correct){
                 
                 clearInterval(timer)
-            
-                        console.log(correct)
-                        scoreBoard.push({Name: playerName, Point: score})
+                scoreBoard.push({Name: playerName, Point: score})
                         let sortedScore = scoreBoard.sort((a, b) => b.Point - a.Point)
                         let topTenScores = $(".top10") //array
                         topTenScores.each((index, element) => {
