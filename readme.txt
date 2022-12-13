@@ -1,4 +1,4 @@
-Simple Typing Game
+#Simple Typing Game
 
 A typing game where players compete in mini typing tests
 while improving their keyboarding speed and accuracy.
