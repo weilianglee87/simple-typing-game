@@ -1,4 +1,4 @@
-//global variable 
+
 let playerName
 let timer
 //let point = 100
@@ -164,9 +164,9 @@ let scoreBoard = []
                     
                        
             if (correct){
-                if (scoreBoard.length >= 3){ //&& $('#timer').text() > scoreBoard.sort()[2]) {
-                    startNewGame()
-                    console.log("newGame")
+                // if (scoreBoard.length >= 3){ //&& $('#timer').text() > scoreBoard.sort()[2]) {
+                //     startNewGame()
+                //     console.log("newGame")
                 }
                 clearInterval(timer)
                 let timeLeft2 = $('#timer').text()
