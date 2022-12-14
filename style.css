@@ -53,18 +53,18 @@ body{
 #button2{
     position: absolute;
     top: 7rem;
-    right: 15.5rem;
+    right: 30.5rem;
 }
 .timerText{
     position: absolute;
     top: 4rem;
-    right: 15rem;
+    right: 30rem;
 }
 .timer{
     position: absolute;
     font-size: 2rem;
     top: 4.6rem;
-    right: 12rem;
+    right: 27rem;
     font-weight: bold;
 }
 .input{
@@ -87,7 +87,7 @@ body{
 .scoreBoard{
     position: absolute;
     top: 35rem;  
-    left: 12rem;
+    left: 28rem;
     font-size: 1.5rem;
 }
 .correct {
