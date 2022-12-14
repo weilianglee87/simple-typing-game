@@ -167,7 +167,7 @@ let scoreBoard = []
                 // if (scoreBoard.length >= 3){ //&& $('#timer').text() > scoreBoard.sort()[2]) {
                 //     startNewGame()
                 //     console.log("newGame")
-                }
+                // }
                 clearInterval(timer)
                 let timeLeft2 = $('#timer').text()
                 scoreBoard.push({Name: playerName, Time: timeLeft2})
