@@ -1,45 +1,48 @@
-#h1 Simple Typing Game
-
+# Simple Typing Game
 A typing game where players compete in mini typing tests
-while improving their keyboarding speed and accuracy.
+while improving their keyboarding speed and accuracy. https://weilianglee87.github.io/simple-typing-game/
 
-Features:
+# Features :
+**Key in your name to start**
 
-Key in your name to start
 Players key in their names in order to start the game.
-Players scores will be recorded in the leaderboard
-Each players will start from 100points 
 
-Compete in the leaderboard
-A table that displays the ranking of the players, determined by number of errors.
+**Multi-Players**
 
-1 min grace period
-Players who exceed 1 min of their game time will be automatically deemed as disqualified from leaderboard.
+Individual scores will be recorded in the leaderboard
 
---------------------------------------------------------------------------------------------------------------------
+**Complete in the leaderboard**
 
-Header:
-This section shows the statistics of the current typing session. This includes the display of the time left & score points
+A table that displays the ranking of the players name and 
 
-Quote Section : 
-This section shows the current text that has to be typed in the input area.
+time , determined by the fastest time.
 
-Input Area: 
-This section contains the input area where the text has to be typed.
+**1 min grace period**
 
-To complete before soft launch 
+Players who exceed 1 min of their game time will be 
 
-- UI for Simple Typing Game
-- Create input form for userName
-- Create a START button
- 
-- Create a scorepoints starting from "100"
-- create a coundown timer of 1minute
-- Create a section of current text/quote to be typed in the input area
-- Create a input area where the text has to be typed
+automatically deemed as disqualified from leaderboard.
 
-- The countdown timer will start once the first letter is keyed (correctly)
-- Once user finish typed, Username and scorepoints will be display in a scoreboard
 
-To show that the game is playable and name and score is recorded.
+# Gameplay
 
+Enter players name to start the game. A quote will be given for players to key. Timer will start once players start to type. Players need to finish typing the quote to stop the timer. 
+
+# Leaderboard
+
+Top 3 Players name and time will be recorded in the leaderboard.
+
+# Technologies
+
+Javascript
+
+JQuery
+
+CSS
+
+HTML
+
+# Future Feature
+- Make the game mobile friendly 
+- Generate more quote for user to play
+- Improve CSS !!!
